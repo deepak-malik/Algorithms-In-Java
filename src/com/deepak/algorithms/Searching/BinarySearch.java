@@ -43,7 +43,7 @@ public class BinarySearch {
 	 *  
 	 * 2. Worst Case : What is the most number of comparisons needed to find the item?
 	 * 	=> Worst case is when search term is not at all in the array
-	 * 	=> If our array is of size N, we need N comparisons for worst case
+	 * 	=> If our array is of size N, we need log(2)N comparisons for worst case
 	 * 
 	 * 3. Average Case : On an Average, how many comparisons are needed to find the element in the array?
 	 * 	=> On an average, search term is anywhere in the list
