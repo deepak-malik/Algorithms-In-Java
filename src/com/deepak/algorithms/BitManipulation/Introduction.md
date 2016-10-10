@@ -42,3 +42,14 @@ So, if we do XOR against 111...1111, all the bits of myBits flipped. It's equiva
 
 Another interesting trick using the XOR: It does in place swap of integers.
 If we apply the XOR operation twice -- say we have a bit, A, and another bit B, and we set C equal to A XOR B, and then take C XOR B: we get A XOR B XOR B, which essentially either flips every bit of A twice, or never flips the bit, so we just get back A. (We can also think of B XOR B as cancelling out.) 
+
+**Tricks with Bits**
+
+**x & (x-1)** = will clear the lowest set bit of x.  
+**x & ~(x-1)** = extracts the lowest set bit of x (all others are clear). Pretty patterns when applied to a linear sequence.  
+**x & (x + (1 << n))** = x, with the run of set bits (possibly length 0) starting at bit n cleared.  
+**x & ~(x + (1 << n))** = the run of set bits (possibly length 0) in x, starting at bit n.  
+**x | (x + 1)** = x with the lowest cleared bit set.  
+**x | ~(x + 1)** = extracts the lowest cleared bit of x (all others are set).  
+**x | (x - (1 << n))** = x, with the run of cleared bits (possibly length 0) starting at bit n set.  
+**x | ~(x - (1 << n))** = the lowest run of cleared bits (possibly length 0) in x, starting at bit n are the only clear bits.  
