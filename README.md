@@ -3,6 +3,7 @@ Implementation of Algorithms in Java, Most of these names are picked up from Gee
 
 1. [ ] **Analysis of Algorithms**
     - [X] [Time and Space Complexity](../master/src/com/deepak/algorithms/Sorting/TimeAndSpaceComplexity.md)
+    - [X] [Choosing the right Algorithm](../master/src/com/deepak/algorithms/Sorting/RightAlgorithm.md)
 
 2. [X] **Searching Algorithms**
     - [X] [Linear Search](../master/src/com/deepak/algorithms/Searching/LinearSearch.java)
