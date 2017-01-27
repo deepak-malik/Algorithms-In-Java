@@ -43,6 +43,23 @@ So, if we do XOR against 111...1111, all the bits of myBits flipped. It's equiva
 Another interesting trick using the XOR: It does in place swap of integers.
 If we apply the XOR operation twice -- say we have a bit, A, and another bit B, and we set C equal to A XOR B, and then take C XOR B: we get A XOR B XOR B, which essentially either flips every bit of A twice, or never flips the bit, so we just get back A. (We can also think of B XOR B as cancelling out.) 
 
+**Bit's useful operations :**
+
+**AND**
+- _x & 0's : 0_ -> AND of a number and set of zero's is zero's.
+- _x & 1's : x_ -> AND of a number and set of one's is one's.
+- _x & x : x_ -> AND of a number with same number is that number.
+
+**OR**
+- _x | 0's : x_ -> OR of a number and set of zero's is that number.
+- _x | 1's : 1_ -> OR of a number and set of one's is one's.
+- _x | x : x_ -> OR of a number with same number is that number.
+
+**XOR**
+- _x ^ 0's : x_ -> XOR of a number with set of zero's is that number.
+- _x ^ 1's : ~x_ -> XOR of a number with set of one's is negation of that same number.
+- _x ^ x : 0_ -> XOR of two numbers is zero.
+
 **Tricks with Bits**
 
 **x & (x-1)** = will clear the lowest set bit of x.  
