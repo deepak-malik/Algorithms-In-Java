@@ -75,6 +75,16 @@ public class CommonOperations_Test {
 	}
 
 	/**
+	 * Test case to check toggle bit operation
+	 */
+	@Test
+	public void testToggleBitOperation() {
+		Assert.assertEquals(CommonOperations.toFullBinaryString(eightBitNumber), "0001 0101");
+		Assert.assertEquals(CommonOperations.toFullBinaryString(CommonOperations.toggleBit(eightBitNumber, 2)), "0001 0001");
+		Assert.assertEquals(CommonOperations.toFullBinaryString(CommonOperations.toggleBit(eightBitNumber, 5)), "0011 0101");
+	}
+
+	/**
 	 * Test case to clear most significant bits through I
 	 * NOTE : Count starts from 1 i.e 4 Bits means total 4 bits
 	 */

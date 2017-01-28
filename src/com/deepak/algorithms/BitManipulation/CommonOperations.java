@@ -61,6 +61,17 @@ public class CommonOperations {
 	}
 
 	/**
+	 * Returns the number after toggling a specific bit
+	 * 
+	 * @param num - Number
+	 * @param i - Position of bit
+	 * @return {@link int}
+	 */
+	public static int toggleBit(int num, int i) {
+		return num ^ (1 << i);
+	}
+
+	/**
 	 * Method to clear most significant bits through I
 	 * 
 	 * @param num - Number
