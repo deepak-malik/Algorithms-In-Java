@@ -15,6 +15,9 @@ Implementation of Algorithms in Java, Most of these names are picked up from Gee
 	- [X] [Bubble Sort](../master/src/com/deepak/algorithms/Sorting/BubbleSort.java)
 	- [X] [Merge Sort](../master/src/com/deepak/algorithms/Sorting/MergeSort.java)
 	- [X] [Counting Sort](../master/src/com/deepak/algorithms/Sorting/CountingSort.java)
+	- [ ] Shell Sort
+	- [ ] Quick Sort
+	- [ ] Heap Sort
 	
 3. [ ] **Bit Manipulation**
 	- [X] [Introduction to Bits](../master/src/com/deepak/algorithms/BitManipulation/Introduction.md)
