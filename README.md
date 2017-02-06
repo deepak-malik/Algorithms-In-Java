@@ -33,7 +33,7 @@ Implementation of Algorithms in Java, Most of these names are picked up from Gee
 	- [ ] Filtering Iterator
 	- [ ] Hopping Iterator
 	- [ ] InOrder Iterator
-	- [ ] LevelOrder Iterator
+	- [X] [LevelOrder Iterator](../master/src/com/deepak/algorithms/Iterators/LevelOrderIterator.java)
 	- [ ] MaxIterator Iterator
 	- [ ] MultiIterator Iterator
 	- [ ] Peek Iterator
