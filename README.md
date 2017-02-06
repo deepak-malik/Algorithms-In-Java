@@ -29,6 +29,16 @@ Implementation of Algorithms in Java, Most of these names are picked up from Gee
 
 6. [ ] **Iterators**
 	- [X] [Standard Iterator](../master/src/com/deepak/algorithms/Iterators/StandardIterator.java)
+	- [ ] Deep Iterator
+	- [ ] Filtering Iterator
+	- [ ] Hopping Iterator
+	- [ ] InOrder Iterator
+	- [ ] LevelOrder Iterator
+	- [ ] MaxIterator Iterator
+	- [ ] MultiIterator Iterator
+	- [ ] Peek Iterator
+	- [ ] PreOrder Iterator
+	- [ ] Rotating Iterator
 	
 7. [ ] **Dynamic Programming**
 
