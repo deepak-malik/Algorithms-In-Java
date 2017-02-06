@@ -2,7 +2,7 @@
  * Algorithms-in-Java
  * CommonOperations.java
  */
-package com.deepak.algorithms.BitManipulation;
+package com.deepak.algorithms.Bit_Manipulation;
 
 /**
  * Collection of some common operations on bits

@@ -1,12 +1,14 @@
 /**
  * Algorithms-in-Java
- * CommonOperations.java
+ * CommonOperations_Test.java
  */
-package com.deepak.algorithms.BitManipulation;
+package com.deepak.algorithms.Bit_Manipulation;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import com.deepak.algorithms.Bit_Manipulation.CommonOperations;
 
 /**
  * Test cases for common operations on bits
