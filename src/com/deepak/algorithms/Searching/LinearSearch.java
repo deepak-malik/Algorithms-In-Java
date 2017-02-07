@@ -5,26 +5,16 @@
 package com.deepak.algorithms.Searching;
 
 /**
- * Class for LinearSearch implementation
- * @author Deepak Malik
+ * Linear Search implementation
+ * 
+ * @author Deepak
  */
 public class LinearSearch {
 
 	/**
-	 * Main method to start the flow of program
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		int[] nonSortedValues = {7, 10, 47, 40, 83, 84, 65, 61, 32, 55, 49, 46, 25, 20, 93, 63, 54, 10};
-		int iValueToBeSearched = 61;
-		System.out.println("******************* LINEAR SEARCH *******************");
-		performLinearSearch(nonSortedValues, iValueToBeSearched);
-	}
-
-	/**
 	 * <p>Linear Search is also called Sequential Search
 	 * Few point to note here, 
-	 * 1. It can be really slow with large number of elemets in the collection
+	 * 1. It can be really slow with large number of elements in the collection
 	 * 	ex. If we have 1000000 items in the list, on an average it will take 500000 number of comparisons
 	 * 2. To be used when we are not sure about the sort order of the list. </p>
 	 * 
@@ -49,19 +39,15 @@ public class LinearSearch {
 	 * 	=> For an array of size N, number of comparisons will be N/2
 	 * </p>
 	 */
-	private static void performLinearSearch(int[] iListOfValues, int iValueToBeSearched) {
+	public static int performLinearSearch(int[] listOfValues, int targetValue) {
 		int index = -1;
-		for (int i=0; i < iListOfValues.length; i++) {
-			if (iListOfValues[i] == iValueToBeSearched) {
+		for (int i=0; i < listOfValues.length; i++) {
+			if (listOfValues[i] == targetValue) {
 				index = i;
 				break;
 			}
 		}
-		if (index == -1) {
-			System.out.println("Element not found in the collection");
-		} else {
-			System.out.println("Element found in the collection at index = " + index);
-		}
+		return index;
 	}
 
 }
