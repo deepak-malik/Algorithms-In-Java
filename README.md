@@ -18,6 +18,7 @@ Implementation of Algorithms in Java, Most of these names are picked up from Gee
 	- [ ] Shell Sort
 	- [ ] Quick Sort
 	- [ ] Heap Sort
+	- [ ] Radix Sort
 	
 4. [ ] **Advanced Algorithms**
 	- [ ] Dijkstra	
