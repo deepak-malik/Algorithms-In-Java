@@ -34,7 +34,7 @@ Implementation of Algorithms in Java, Most of these names are picked up from Gee
 	- [X] [Hopping Iterator](../master/src/com/deepak/algorithms/Iterators/HoppingIterator.java)
 	- [ ] InOrder Iterator
 	- [X] [LevelOrder Iterator](../master/src/com/deepak/algorithms/Iterators/LevelOrderIterator.java)
-	- [ ] MaxIterator Iterator
+	- [X] [MaxIterator Iterator](../master/src/com/deepak/algorithms/Iterators/MaxIterator.java)
 	- [ ] MultiIterator Iterator
 	- [ ] Peek Iterator
 	- [ ] PreOrder Iterator

@@ -25,14 +25,6 @@ import java.util.NoSuchElementException;
  * If the original iterator returns: [1, 2, 3, 4, 5] in order, then the hopping
  * iterator will return [1, 5] in order when the hop value is 3.
  * 
- * Methods expected to be implemented:
- *  
- * public class HoppingIterator<T> implements Iterator<T> {
- * 		public HoppingIterator(Iterator<T> iterator, int numHops) {...}
- * 		public boolean hasNext() {...}
- * 		public T next() {...}
- * }
- * 
  * </br>
  * 
  * @author Deepak
