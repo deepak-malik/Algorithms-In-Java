@@ -4,6 +4,8 @@
  */
 package com.deepak.algorithms.Sorting;
 
+import com.deepak.algorithms.Library.ArrayUtils;
+
 /**
  * Insertion sort implementation
  * 
@@ -37,28 +39,15 @@ public class InsertionSort {
 	 * 
 	 * @param listOfValues - List of values passed in the request
 	 */
-	public static int[] performInsertionSort(int[] listOfValues) {
+	public static Integer[] performInsertionSort(Integer[] listOfValues) {
 		for (int i = 1; i < listOfValues.length; i++) {
 			for (int j = i; j > 0; j--) {
 				if (listOfValues[j] < listOfValues[j - 1]) {
-					swap(listOfValues, j, j - 1);
+					ArrayUtils.swap(listOfValues, j, j - 1);
 				}
 			}
 		}
 		return listOfValues;
-	}
-
-	/**
-	 * Method to swap values at any two indexes
-	 * 
-	 * @param values
-	 * @param index1
-	 * @param index2
-	 */
-	private static void swap(int[] values, int index1, int index2) {
-		int tempValue = values[index1];
-		values[index1] = values[index2];
-		values[index2] = tempValue;
 	}
 
 }

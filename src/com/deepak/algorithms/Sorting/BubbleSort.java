@@ -1,26 +1,16 @@
 /**
- * Algorithms-in-Java
+ * Algorithms-In-Java
  * BubbleSort.java
  */
 package com.deepak.algorithms.Sorting;
 
-import java.util.Arrays;
+import com.deepak.algorithms.Library.ArrayUtils;
 
 /**
  * Class for BubbleSort implementation
  * @author Deepak
  */
 public class BubbleSort {
-
-	/**
-	 * Main method to start the flow of program
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		int[] valuesToBeSorted = {7, 10, 47, 40, 83, 84, 65, 61, 32, 55, 49, 46, 25, 20, 93, 63, 54, 10};
-		System.out.println("******************* BUBBLE - SORT *******************");
-		performBubbleSort(valuesToBeSorted);
-	}
 
 	/**
 	 * Bubble Sort implementation
@@ -48,27 +38,15 @@ public class BubbleSort {
 	 * 
 	 * @param listOfValues - List of values passed in the request
 	 */
-	private static void performBubbleSort(int[] listOfValues) {
+	public static Integer[] performBubbleSort(Integer[] listOfValues) {
 		for (int i = 0; i < listOfValues.length; i++) {
 			for (int j = 1; j < (listOfValues.length - i); j++) {
 				if (listOfValues[j - 1] > listOfValues[j]) {
-					swap(listOfValues, j - 1, j);
+					ArrayUtils.swap(listOfValues, j - 1, j);
 				}
 			}
 		}
-		Arrays.stream(listOfValues).forEach(System.out::println);
-	}
-
-	/**
-	 * Method to swap 2 values
-	 * @param values
-	 * @param firstValue
-	 * @param secondValue
-	 */
-	private static void swap(int[] values, int firstValue, int secondValue) {
-		int tempValue = values[firstValue];
-		values[firstValue] = values[secondValue];
-		values[secondValue] = tempValue;
+		return listOfValues;
 	}
 
 }

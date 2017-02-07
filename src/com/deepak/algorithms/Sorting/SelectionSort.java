@@ -4,6 +4,8 @@
  */
 package com.deepak.algorithms.Sorting;
 
+import com.deepak.algorithms.Library.ArrayUtils;
+
 /**
  * Selection Sort implementation
  * 
@@ -37,30 +39,17 @@ public class SelectionSort {
 	 * 
 	 * @param listOfValues - List of values passed in the request
 	 */
-	public static int[] performSelectionSort(int[] listOfValues) {
+	public static Integer[] performSelectionSort(Integer[] listOfValues) {
 		for (int i = 0; i < listOfValues.length - 1; i++) {
 			int minValue = listOfValues[i];
 			for (int j = i + 1; j < listOfValues.length; j++) {
 				if (listOfValues[j] < minValue) {
 					minValue = listOfValues[j];
-					swap(listOfValues, i, j);
+					ArrayUtils.swap(listOfValues, i, j);
 				}
 			}
 		}
 		return listOfValues;
-	}
-
-	/**
-	 * Method to swap values at any two indexes
-	 * 
-	 * @param values
-	 * @param index1
-	 * @param index2
-	 */
-	private static void swap(int[] values, int index1, int index2) {
-		int tempValue = values[index1];
-		values[index1] = values[index2];
-		values[index2] = tempValue;
 	}
 
 }
