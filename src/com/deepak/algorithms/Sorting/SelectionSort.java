@@ -1,26 +1,15 @@
 /**
- * Algorithms-in-Java
+ * Algorithms-In-Java
  * SelectionSort.java
  */
 package com.deepak.algorithms.Sorting;
 
-import java.util.Arrays;
-
 /**
- * Class for SelectionSort implementation
+ * Selection Sort implementation
+ * 
  * @author Deepak
  */
 public class SelectionSort {
-
-	/**
-	 * Main method to start the flow of program
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		int[] valuesToBeSorted = {7, 10, 47, 40, 83, 84, 65, 61, 32, 55, 49, 46, 25, 20, 93, 63, 54, 10};
-		System.out.println("******************* SELECTION - SORT *******************");
-		performSelectionSort(valuesToBeSorted);
-	}
 
 	/**
 	 * Selection Sort implementation
@@ -48,29 +37,30 @@ public class SelectionSort {
 	 * 
 	 * @param listOfValues - List of values passed in the request
 	 */
-	private static void performSelectionSort(int[] listOfValues) {
+	public static int[] performSelectionSort(int[] listOfValues) {
 		for (int i = 0; i < listOfValues.length - 1; i++) {
-			int positionHoldingMinimumValue = i;
+			int minValue = listOfValues[i];
 			for (int j = i + 1; j < listOfValues.length; j++) {
-				if (listOfValues[j] < listOfValues[positionHoldingMinimumValue]) {
-					positionHoldingMinimumValue = j;
+				if (listOfValues[j] < minValue) {
+					minValue = listOfValues[j];
+					swap(listOfValues, i, j);
 				}
 			}
-			swap(listOfValues, positionHoldingMinimumValue, i);
 		}
-		Arrays.stream(listOfValues).forEach(System.out::println);
+		return listOfValues;
 	}
 
 	/**
-	 * Method to swap 2 values
+	 * Method to swap values at any two indexes
+	 * 
 	 * @param values
-	 * @param firstValue
-	 * @param secondValue
+	 * @param index1
+	 * @param index2
 	 */
-	private static void swap(int[] values, int firstValue, int secondValue) {
-		int tempValue = values[firstValue];
-		values[firstValue] = values[secondValue];
-		values[secondValue] = tempValue;
+	private static void swap(int[] values, int index1, int index2) {
+		int tempValue = values[index1];
+		values[index1] = values[index2];
+		values[index2] = tempValue;
 	}
 
 }
