@@ -1,26 +1,15 @@
 /**
- * Algorithms-in-Java
+ * Algorithms-In-Java
  * InsertionSort.java
  */
 package com.deepak.algorithms.Sorting;
 
-import java.util.Arrays;
-
 /**
- * Class for InsertionSort implementation
+ * Insertion sort implementation
+ * 
  * @author Deepak
  */
 public class InsertionSort {
-
-	/**
-	 * Main method to start the flow of program
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		int[] valuesToBeSorted = {7, 10, 47, 40, 83, 84, 65, 61, 32, 55, 49, 46, 25, 20, 93, 63, 54, 10};
-		System.out.println("******************* INSERTION - SORT *******************");
-		performInsertionSort(valuesToBeSorted);
-	}
 
 	/**
 	 * Insertion Sort implementation
@@ -48,27 +37,28 @@ public class InsertionSort {
 	 * 
 	 * @param listOfValues - List of values passed in the request
 	 */
-	private static void performInsertionSort(int[] listOfValues) {
+	public static int[] performInsertionSort(int[] listOfValues) {
 		for (int i = 1; i < listOfValues.length; i++) {
 			for (int j = i; j > 0; j--) {
-				if (listOfValues[j] < listOfValues[j-1]) {
-					swap(listOfValues, j, j-1);
+				if (listOfValues[j] < listOfValues[j - 1]) {
+					swap(listOfValues, j, j - 1);
 				}
 			}
 		}
-		Arrays.stream(listOfValues).forEach(System.out::println);
+		return listOfValues;
 	}
 
 	/**
-	 * Method to swap 2 values
+	 * Method to swap values at any two indexes
+	 * 
 	 * @param values
-	 * @param firstValue
-	 * @param secondValue
+	 * @param index1
+	 * @param index2
 	 */
-	private static void swap(int[] values, int firstValue, int secondValue) {
-		int tempValue = values[firstValue];
-		values[firstValue] = values[secondValue];
-		values[secondValue] = tempValue;
+	private static void swap(int[] values, int index1, int index2) {
+		int tempValue = values[index1];
+		values[index1] = values[index2];
+		values[index2] = tempValue;
 	}
 
 }
