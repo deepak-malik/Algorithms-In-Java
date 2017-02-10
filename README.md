@@ -21,7 +21,33 @@ Implementation of Algorithms in Java, Most of these names are picked up from Gee
 	- [ ] Radix Sort
 	
 4. [ ] **Advanced Algorithms**
-	- [ ] Dijkstra	
+	- [ ] Greedy Algorithms
+		- [ ] Travelling Salesman Problem
+		- [ ] Prim's Minimal Spanning Tree Algorithm
+		- [ ] Kruskal's Minimal Spanning Tree Algorithm
+		- [ ] Dijkstra's Minimal Spanning Tree Algorithm
+		- [ ] Dijkstra's Shortest Path
+		- [ ] Graph - Map Coloring
+		- [ ] Graph - Vertex Cover
+		- [ ] Knapsack Problem
+		- [ ] Job Scheduling Problem
+		- [ ] Huffman Coding
+		- [ ] Reverse Delete
+	- [ ] Divide and Conquer
+		- [ ] Merge Sort
+		- [ ] Quick Sort
+		- [ ] Binary Search
+		- [ ] Strassen's Matrix Multiplication
+		- [ ] Closest pair (points)
+		- [ ] Cooley–Tukey Fast Fourier Transform (FFT) Algorithm
+		- [ ] Karatsuba algorithm for fast multiplication
+	- [ ] Miscellaneous
+		- [ ] Rabin Karp Substring Search
+		- [ ] MapReduce
+		- [ ] Bellmen-Ford Algorithm
+		- [ ] A*
+		- [ ] Bipartric Graph
+		- [ ] P, NP and NP Complete
 	
 5. [ ] **Bit Manipulation**
 	- [X] [Introduction to Bits](../master/src/com/deepak/algorithms/BitManipulation/Introduction.md)
@@ -42,7 +68,18 @@ Implementation of Algorithms in Java, Most of these names are picked up from Gee
 	- [ ] Rotating Iterator
 	
 7. [ ] **Dynamic Programming**
+	- [ ] Fibonacci number series
+	- [ ] Knapsack Problem
+	- [ ] Tower of Hanoi
+	- [ ] All pair shortest path by Floyd-Warshall
+	- [ ] Shortest path by Dijkstra
+	- [ ] Project Scheduling
 
 8. [ ] **Recursion**
+	- [ ] Fibonacci Problem
+	- [ ] Tower of Hanoi
 
 9. [ ] **Regex**	
+	- [ ] Regex for US Phone Number
+	- [ ] Regex for Email
+	- [ ] Regex Pattern Matcher implementation
