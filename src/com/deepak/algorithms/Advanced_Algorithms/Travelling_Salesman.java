@@ -1,5 +1,5 @@
 package com.deepak.algorithms.Advanced_Algorithms;
 
-public class Dijkstra {
+public class Travelling_Salesman {
 
 }

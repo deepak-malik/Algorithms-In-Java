@@ -17,7 +17,7 @@ public class MergeSort {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		int[] valuesToBeSorted = {7, 10, 47, 40, 83, 84, 65, 61, 32, 55, 49, 46, 25, 20, 93, 63, 54, 10};
+		int[] valuesToBeSorted = {7, 10, 47, 40};
 		System.out.println("******************* MERGE - SORT *******************");
 		int[] sortedValues = performMergeSort(valuesToBeSorted, 0, valuesToBeSorted.length - 1);
 		Arrays.stream(sortedValues).forEach(System.out::println);
