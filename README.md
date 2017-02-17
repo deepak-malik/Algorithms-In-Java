@@ -20,7 +20,10 @@ Implementation of Algorithms in Java, Most of these names are picked up from Gee
 	- [ ] Heap Sort
 	- [ ] Radix Sort
 	
-4. [ ] **Advanced Algorithms**
+4. [ ] Standard Algorithms
+	- [ ] Euclid's Algorithm
+	
+5. [ ] **Advanced Algorithms**
 	- [ ] Greedy Algorithms
 		- [ ] Travelling Salesman Problem
 		- [ ] Prim's Minimal Spanning Tree Algorithm
@@ -49,23 +52,10 @@ Implementation of Algorithms in Java, Most of these names are picked up from Gee
 		- [ ] Bipartric Graph
 		- [ ] P, NP and NP Complete
 	
-5. [ ] **Bit Manipulation**
+6. [ ] **Bit Manipulation**
 	- [X] [Introduction to Bits](../master/src/com/deepak/algorithms/BitManipulation/Introduction.md)
 	- [X] [Common Operations on Bits](../master/src/com/deepak/algorithms/BitManipulation/CommonOperations.java)
 	- [X] [Useful Operations on Bits](../master/src/com/deepak/algorithms/BitManipulation/UsefulOperations.java)
-
-6. [ ] **Iterators**
-	- [X] [Standard Iterator](../master/src/com/deepak/algorithms/Iterators/StandardIterator.java)
-	- [ ] Deep Iterator
-	- [ ] Filtering Iterator
-	- [X] [Hopping Iterator](../master/src/com/deepak/algorithms/Iterators/HoppingIterator.java)
-	- [ ] InOrder Iterator
-	- [X] [LevelOrder Iterator](../master/src/com/deepak/algorithms/Iterators/LevelOrderIterator.java)
-	- [X] [MaxIterator Iterator](../master/src/com/deepak/algorithms/Iterators/MaxIterator.java)
-	- [ ] MultiIterator Iterator
-	- [ ] Peek Iterator
-	- [ ] PreOrder Iterator
-	- [ ] Rotating Iterator
 	
 7. [ ] **Dynamic Programming**
 	- [ ] Fibonacci number series
