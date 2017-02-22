@@ -1,5 +1,5 @@
 /**
- * Algorithms-in-Java
+ * Algorithms-In-Java
  * BinarySearch.java
  */
 package com.deepak.algorithms.Searching;

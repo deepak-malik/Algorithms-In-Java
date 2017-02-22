@@ -70,6 +70,7 @@ Implementation of Algorithms in Java, Most of these names are picked up from Gee
 	- [ ] Tower of Hanoi
 
 9. [ ] **Regex**	
-	- [ ] Regex for US Phone Number
-	- [ ] Regex for Email
+	- [X] [Regex for US Phone Number](../master/src/com/deepak/algorithms/Regex/RegexForUSPhoneNumber.java)
+	- [X] [Regex for Email](../master/src/com/deepak/algorithms/Regex/RegexForEmail.java)
+	- [X] [Regex for IP Address](../master/src/com/deepak/algorithms/Regex/RegexForIPAddress.java)
 	- [ ] Regex Pattern Matcher implementation
