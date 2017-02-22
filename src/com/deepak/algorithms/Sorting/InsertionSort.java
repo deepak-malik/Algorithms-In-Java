@@ -7,7 +7,7 @@ package com.deepak.algorithms.Sorting;
 import com.deepak.algorithms.Library.ArrayUtils;
 
 /**
- * Insertion sort implementation
+ * Insertion Sort Implementation
  * 
  * @author Deepak
  */
@@ -15,6 +15,7 @@ public class InsertionSort {
 
 	/**
 	 * Insertion Sort implementation
+	 * 
 	 * <p> Question - When will you consider a list of items to be sorted?
 	 * Answer - When all the elements to the left of each element are smaller then the element
 	 * 
@@ -37,17 +38,21 @@ public class InsertionSort {
 	 * Average - O(n^2)
 	 * Worst - O(n^2)
 	 * 
-	 * @param listOfValues - List of values passed in the request
+	 * @param list - List of values passed in the request
 	 */
-	public static Integer[] performInsertionSort(Integer[] listOfValues) {
-		for (int i = 1; i < listOfValues.length; i++) {
+	public static Integer[] performInsertionSort(Integer[] list) {
+		/* Loop through the items starting from 1. 
+		 * 1st element is always considered as sorted */
+		for (int i = 1; i < list.length; i++) {
+			/* Loop through the rest of the elements and compare each with the previous one.
+			 * If small, swap it */
 			for (int j = i; j > 0; j--) {
-				if (listOfValues[j] < listOfValues[j - 1]) {
-					ArrayUtils.swap(listOfValues, j, j - 1);
+				if (list[j] < list[j - 1]) {
+					ArrayUtils.swap(list, j, j - 1);
 				}
 			}
 		}
-		return listOfValues;
+		return list;
 	}
 
 }

@@ -7,7 +7,8 @@ package com.deepak.algorithms.Sorting;
 import com.deepak.algorithms.Library.ArrayUtils;
 
 /**
- * Class for BubbleSort implementation
+ * BubbleSort Implementation
+ * 
  * @author Deepak
  */
 public class BubbleSort {
@@ -36,17 +37,20 @@ public class BubbleSort {
 	 * Average - O(n^2)
 	 * Worst - O(n^2)
 	 * 
-	 * @param listOfValues - List of values passed in the request
+	 * @param list - List of values passed in the request
 	 */
-	public static Integer[] performBubbleSort(Integer[] listOfValues) {
-		for (int i = 0; i < listOfValues.length; i++) {
-			for (int j = 1; j < (listOfValues.length - i); j++) {
-				if (listOfValues[j - 1] > listOfValues[j]) {
-					ArrayUtils.swap(listOfValues, j - 1, j);
+	public static Integer[] performBubbleSort(Integer[] list) {
+		/* Loop through the entire collection */
+		for (int i = 0; i < list.length; i++) {
+			/* Loop through rest of the elements */
+			for (int j = 1; j < (list.length - i); j++) {
+				/* If previous is greater then the current, swap it */
+				if (list[j - 1] > list[j]) {
+					ArrayUtils.swap(list, j - 1, j);
 				}
 			}
 		}
-		return listOfValues;
+		return list;
 	}
 
 }

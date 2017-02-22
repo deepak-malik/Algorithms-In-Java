@@ -7,14 +7,15 @@ package com.deepak.algorithms.Sorting;
 import com.deepak.algorithms.Library.ArrayUtils;
 
 /**
- * Selection Sort implementation
+ * Selection Sort Implementation
  * 
  * @author Deepak
  */
 public class SelectionSort {
 
 	/**
-	 * Selection Sort implementation
+	 * Selection Sort implementation :
+	 * 
 	 * <p> This Algorithm divides the array into two imaginary arrays i.e one with sorted elements, 
 	 * and other one with unsorted elements. Initially sorted array will be empty, while unsorted
 	 * one contains the whole array.
@@ -37,19 +38,24 @@ public class SelectionSort {
 	 * Average - O(n^2)
 	 * Worst - O(n^2)
 	 * 
-	 * @param listOfValues - List of values passed in the request
+	 * @param list - List of values passed in the request
 	 */
-	public static Integer[] performSelectionSort(Integer[] listOfValues) {
-		for (int i = 0; i < listOfValues.length - 1; i++) {
-			int minValue = listOfValues[i];
-			for (int j = i + 1; j < listOfValues.length; j++) {
-				if (listOfValues[j] < minValue) {
-					minValue = listOfValues[j];
-					ArrayUtils.swap(listOfValues, i, j);
+	public static Integer[] performSelectionSort(Integer[] list) {
+		/* Loop through the list till we reach end */
+		for (int i = 0; i < list.length - 1; i++) {
+			/* Assume current element is minimum */
+			int min = list[i];
+			/* Start from the next element and keep going till end */
+			for (int j = i + 1; j < list.length; j++) {
+				/* If any element is less then minimum, update minimum */
+				if (list[j] < min) {
+					min = list[j];
+					/* Swap the elements */
+					ArrayUtils.swap(list, i, j);
 				}
 			}
 		}
-		return listOfValues;
+		return list;
 	}
 
 }

@@ -1,5 +1,5 @@
 /**
- * Algorithms-in-Java
+ * Algorithms-In-Java
  * MergeSort.java
  */
 package com.deepak.algorithms.Sorting;
@@ -7,13 +7,15 @@ package com.deepak.algorithms.Sorting;
 import java.util.Arrays;
 
 /**
- * Class for MergeSort implementation
+ * MergeSort Implementation
+ * 
  * @author Deepak
  */
 public class MergeSort {
 
 	/**
 	 * Main method to start the flow of program
+	 * 
 	 * @param args
 	 */
 	public static void main(String[] args) {
@@ -32,52 +34,61 @@ public class MergeSort {
 	 * Average - O(n log(n))
 	 * Worst - O(n log(n))
 	 * 
-	 * @param listOfValues - List of values passed in the request
+	 * @param list - List of values to be sorted
+	 * @param low - lowest index i.e 0
+	 * @param high - highest index i.e list.length - 1
 	 */
-	public static int[] performMergeSort(int[] iListOfValues, int iLowestPosition, int iHighestPosition) {
-		if (iLowestPosition < iHighestPosition) {
-			int middlePosition = iLowestPosition + (iHighestPosition - iLowestPosition) / 2;
-			performMergeSort(iListOfValues, iLowestPosition, middlePosition);
-			performMergeSort(iListOfValues, middlePosition + 1, iHighestPosition);
-			merge(iListOfValues, iLowestPosition, middlePosition, iHighestPosition);
+	public static int[] performMergeSort(int[] list, int low, int high) {
+		/* If low is less then high, find the middle position,
+		 * and perform merge sort on both the sides of the list.
+		 * Finally, merge the two sorted parts */
+		if (low < high) {
+			int middle = low + (high - low) / 2;
+			/* Merge sort of left side */
+			performMergeSort(list, low, middle);
+			/* Merge sort on right side */
+			performMergeSort(list, middle + 1, high);
+			merge(list, low, middle, high);
 		}
-		return iListOfValues;
+		return list;
 	}
 
 	/**
-	 * Method to merge two items from the list
-	 * @param iListOfValues
-	 * @param iLowestPosition
-	 * @param middlePosition
-	 * @param iHighestPosition
-	 * @return {@link int[]} 
+	 * Method to merge a list 
+	 * 
+	 * @param list
+	 * @param low
+	 * @param middle
+	 * @param high
+	 * @return {@link int[]}
 	 */
-	private static int[] merge(int[] iListOfValues, int iLowestPosition, int middlePosition, int iHighestPosition) {
-		int[] copyOfArrays = new int[iListOfValues.length];
-		for (int i = 0; i < iListOfValues.length; i++ ) {
-			copyOfArrays[i] = iListOfValues[i];
+	private static int[] merge(int[] list, int low, int middle, int high) {
+		/* Create a new copy of array and fill it with same elements */
+		int[] copy = new int[list.length];
+		for (int i = 0; i < list.length; i++ ) {
+			copy[i] = list[i];
 		}
-
-		int i = iLowestPosition;
-		int j = middlePosition + 1;
-		int k = iLowestPosition;
-
-		while (i <= middlePosition && j <= iHighestPosition) {
-			if (copyOfArrays[i] <= copyOfArrays[j]) {
-				iListOfValues[k] = copyOfArrays[i];
+		/* Find i, j and k */
+		int i = low;
+		int j = middle + 1;
+		int k = low;
+		/* TODO : Explain what is happening here */
+		while (i <= middle && j <= high) {
+			if (copy[i] <= copy[j]) {
+				list[k] = copy[i];
 				i++;
 			} else {
-				iListOfValues[k] = copyOfArrays[j];
+				list[k] = copy[j];
 				j++;
 			}
 			k++;
 		}
-		while (i <= middlePosition) {
-			iListOfValues[k] = copyOfArrays[i];
+		while (i <= middle) {
+			list[k] = copy[i];
 			k++;
 			i++;
 		}
-		return iListOfValues;
+		return list;
 	}
 
 }

@@ -126,7 +126,7 @@ public class UsefulOperations {
 	 * @param b - Second Number
 	 * @return {@link Map<String, Integer>} - Result
 	 */
-	public Map<String, Integer> swap2Integers(int a, int b) {
+	public static Map<String, Integer> swap2Integers(int a, int b) {
 		Map<String, Integer> result = new HashMap<>();
 		a ^= b;
 		b ^= a;
